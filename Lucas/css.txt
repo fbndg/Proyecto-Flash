@@ -1,0 +1,38 @@
+
+.main-section{
+	border:1px solid #31aafe;
+}
+.profile-header{
+	background-color: #31aafe;
+	padding:5px;
+	color:#fff;
+}
+.profile-header a i{
+	color:#fff;
+}
+.user-img{
+	padding:20px 0px;
+	color:#31aafe;
+}
+.user-img h5{
+	margin:5px 0px 0px 0px;
+	font-weight: bold;
+}
+.user-img span{
+	color:#5a5a5a;
+}
+.user-social-detail{
+	background-color: #FFF;
+	padding:8px 5px 5px 5px;
+	border-top: 3px solid #31aafe;
+}
+.user-social-detail i{
+	color:#31aafe;
+    font-size:18px;
+    display: block;
+}
+
+.user-social-detail a{
+text-decoration: none;
+color: black;
+}
