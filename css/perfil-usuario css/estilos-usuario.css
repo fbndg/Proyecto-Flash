@@ -1,6 +1,18 @@
 .main-section{
 	border:1px solid #31aafe;
 }
+
+.entero{
+	margin: 25px auto;
+	background: white;
+	padding: 0px;
+}
+@media (max-width: 765px) {
+	.entero {
+		margin: 0px;
+		border-radius: 0px;
+	}
+}
 .profile-header{
 	background-color: #31aafe;
 	padding:5px;
@@ -34,4 +46,13 @@
 .user-social-detail a{
 text-decoration: none;
 color: black;
+}
+.row{
+	margin: -15px;
+}
+@media (max-width: 765px) {
+	.row {
+		margin: 0px;
+		border-radius: 0px;
+	}
 }
