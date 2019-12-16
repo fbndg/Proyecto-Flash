@@ -7,19 +7,18 @@
 .nav-link, .nav-link:hover {
   color: white;
 }
+.tros {
+filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(107%) contrast(101%);
+}
 .dropdown-header a{
   color: grey;
   text-decoration: none;
-}
-.tros {
-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(107%) contrast(101%);
 }
 @media (max-width: 765px) {
   body div.container {
    padding: 0px;
   }
 }
-
 /*------------ All ------------*/
 *{
   margin: 0;
@@ -146,6 +145,9 @@ div p{
  .flex-container img{
    width: 29%;
    margin: 1.8%;
+ }
+ section {
+   margin: 0px !important;
  }
 }
 
