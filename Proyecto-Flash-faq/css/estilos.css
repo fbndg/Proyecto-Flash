@@ -170,3 +170,8 @@ div p{
     text-align: center;
   }
 }
+
+.hover a:hover{
+  color: rgb(56, 56, 56);
+}
+
