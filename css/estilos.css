@@ -14,10 +14,11 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(107%
    padding: 0px;
   }
 }
+
 *{
   margin: 0;
   padding: 0;
-  border-radius: 15px;
+  border-radius: 10%;
 }
 
 body{

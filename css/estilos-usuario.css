@@ -1,0 +1,212 @@
+/*.main-section{
+	border:1px solid #31aafe;
+}
+
+.entero{
+	margin: 25px auto;
+	background: white;
+	padding: 0px;
+}
+
+@media (max-width: 765px) {
+	.entero {
+		margin: 0px;
+		border-radius: 0px;
+	}
+}
+.profile-header{
+	background-color: #31aafe;
+	padding:5px;
+	color:#fff;
+}
+.profile-header a i{
+	color:#fff;
+}
+.user-img{
+	padding:20px 0px;
+	color:#31aafe;
+}
+.user-img h5{
+	margin:5px 0px 0px 0px;
+	font-weight: bold;
+}
+.user-img span{
+	color:#5a5a5a;
+}
+.user-social-detail{
+	background-color: #FFF;
+	padding:8px 5px 5px 5px;
+	border-top: 3px solid #31aafe;
+}
+.user-social-detail i{
+	color:#31aafe;
+    font-size:18px;
+    display: block;
+}
+
+.user-social-detail a{
+text-decoration: none;
+color: black;
+}
+.row{
+	margin: -15px;
+}
+@media (max-width: 765px) {
+	.row {
+		margin: 0px;
+		border-radius: 0px;
+	}
+}*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	border-radius: 15px;
+}
+
+body{
+	background-image: url(../img/fondo-1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+/****************************************************************************************************************************************************************************************************************************************************CSS DEL HEADER
+***************************************************************************************************************************************************************************************************************************************************/
+
+.logo img{
+	width: 350px;
+	margin: auto;
+	padding: 5px;
+	display: block;
+}
+	
+.logo{
+	width: 100%;
+	background: #000;
+	margin-top: 20px;
+}
+	
+div p{
+	text-align: center;
+	margin: 0 auto 5px;
+}
+	
+.flex-container{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+/****************************************************************************************************************************************************************************************************************************************************CSS DEL NAV ***************************************************************************************************************************************************************************************************************************************************/
+
+
+.navbar {
+	margin: 20px auto;
+	font-size: 20px;
+	background-color: #31aafe;
+}
+
+.nav-link, .nav-link:hover {
+	color: white;
+}
+  
+.tros {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(107%) contrast(101%);
+}
+
+@media (max-width: 765px) {
+
+	body div.container {
+	padding: 0px;
+	}
+}
+
+
+/****************************************************************************************************************************************************************************************************************************************************CSS PERFIL DEL USUARIO ***************************************************************************************************************************************************************************************************************************************************/
+
+.main-section{
+	max-width: 100%;
+}
+
+.text-center{
+	margin: 0 auto;
+}
+.profile-header{
+	background-color: #31aafe;
+	padding:5px;
+	color:#fff;
+}
+.profile-header a i{
+	color:#fff;
+}
+.user-img{
+	padding:20px 0px;
+	color:#31aafe;
+	background-color: white;
+}
+.user-img h5{
+	margin:5px 0px 0px 0px;
+	font-weight: bold;
+}
+.user-img span{
+	color:#5a5a5a;
+}
+.user-social-detail{
+	background-color: #FFF;
+	padding:8px 5px 5px 5px;
+	border-top: 3px solid #31aafe;
+}
+.user-social-detail i{
+	color:#31aafe;
+    font-size:18px;
+    display: block;
+}
+
+.user-social-detail a{
+text-decoration: none;
+color: black;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+	.user-social-detail p{
+		display: none;
+	}
+	
+  }
+  
+
+/****************************************************************************************************************************************************************************************************************************************************CSS DEL FOOTER
+***************************************************************************************************************************************************************************************************************************************************/
+
+.footer{
+	background: #000;
+	color: #fff;
+	clear: both;
+	padding: 10px 0px;
+	margin: 20px auto;
+	text-align: center;
+	width: 100%;
+}
+
+.footer p {
+	margin: 10px auto;
+}
+
+span{
+	font-weight: bold;
+}
+
+.footer img{
+	width: 50px;
+	margin-right: 10px;
+}
+
+
+
+
+
+
