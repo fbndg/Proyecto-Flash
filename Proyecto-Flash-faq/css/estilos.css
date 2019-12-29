@@ -11,6 +11,7 @@
   color: grey;
   text-decoration: none;
 }
+
 .tros {
 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(107%) contrast(101%);
 }
@@ -131,9 +132,36 @@ div p{
 }
 
 .main .articles article p{
-  text-align: justify;
+  text-align: center; /*29/12: cambie justify x center*/
+}
+.descuento{
+  width: 100px;
+  height: 30px;
+  padding-left: 5px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  position: relative;
+  bottom: 100px; /*40*/
+  left: 60px;/*30*/
 }
 
+.descripcion{
+  position: relative;
+  top: -350px;
+  left: 350px;
+}
+.cont-imagen{
+  position: relative;
+}
+
+#imagen{
+  position:fixed;
+  bottom:150px;
+  left:1000px;
+  border-radius: 50px;
+}
 
  /*------------ MEDIA ------------*/
 @media (max-width: 1024px) {
@@ -170,8 +198,3 @@ div p{
     text-align: center;
   }
 }
-
-.hover a:hover{
-  color: rgb(56, 56, 56);
-}
-
