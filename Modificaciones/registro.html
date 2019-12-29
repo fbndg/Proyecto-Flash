@@ -1,0 +1,171 @@
+
+<?php
+
+//Validación del input de nombre.
+$errores = [];
+
+if(isset($_POST['inputUserame'])){
+if(empty($_POST['inputUserame'])){
+$errores['inputUserame'][]="Este campo es obligatorio.";
+}
+if(strlen($_POST['inputUserame'])<2){
+$errores['inputUserame'][]="Tu nombre debe tener al menos 2 caracteres.";
+}
+}
+
+//Validación del input de email.
+$errores = [];
+
+if(isset($_POST['inputEmail'])){
+if(empty($_POST['inputEmail'])){
+$errores['inputEmail'][]="Este campo es obligatorio.";
+}
+
+if(!filter_var($_POST['inputEmail'], FILTER_VALIDATE_EMAIL)){
+$errores['inputEmail'][]="Formato de email no válido.";
+}
+
+//Validación del input de password.
+$errores = [];
+
+if(isset($_POST['inputPassword'])){
+if(empty($_POST['inputPassword'])){
+$errores['inputPassword'][]="Este campo es obligatorio.";
+}
+
+if(strlen($_POST['inputPassword'])<6){
+$errores['inputPassword'][]="La longitud de la contraseña debe ser superior a 6.";
+}
+
+
+//Validación del input de ConfirmPassword.
+$errores = [];
+
+if(isset($_POST['inputConfirmPassword'])){
+if(empty($_POST['inputConfirmPassword'])){
+$errores['inputConfirmPassword'][]="Este campo es obligatorio.";
+}
+}
+
+if($_POST['inputPassword'] != $_POST['inputConfirmPassword']){
+$errores['inputConfirmPassword'][]="Las contraseñas deben coincidir.";
+}
+
+}
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/CSS forms/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>registro</title>
+  </head>
+  <body>
+    <?php require_once 'partials/header.php' ?>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+
+         <img src="img/Logoflash.jpg" alt="Logotipo">
+       </a>
+       <p>flashtorecomputacion.com</p>
+      </div>
+
+  <a href="#"></a>
+
+      <nav class="navbar navbar-expand-sm justify-content-center ">
+
+        <button class="navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#buno">
+          <i class="fa fa-bars tros" aria-hidden="false"></i>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="buno">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link nav2">Inicio</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle nav2" data-toggle="dropdown" id="navbardrop">Productos</a>
+                <div class="dropdown-menu">
+                  <!--<a href="productos.html" class="dropdown-item nav2">Todos los productos</a>-->
+                  <a href="desktops.html" class="dropdown-item nav2">Pc's de escritorio</a>
+                  <a href="notebooks.html" class="dropdown-item nav2">Notebooks</a>
+                  <a href="impresoras.html" class="dropdown-item nav2">Impresoras</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="faq.html" class="nav-link nav2">Preguntas frecuentes</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link nav2">Contacto</a></li>
+            <li class="nav-item"><a href="usuario.html" class="nav-link">Usuario</a></li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="buno">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="login.html" class="nav-link nav2">Login</a></li>
+            <li class="nav-item"><a href="registro.html" class="nav-link nav2">Registro</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row my-5">
+
+          <div class="card-body">
+            <h5 class="card-title text-center">Registro</h5>
+            <form class="form-signin" method="post" action="">
+              <div class="form-label-group">
+                <input type="text" id="inputUserame" name="inputUserame" class="form-control" placeholder="Usuario" required autofocus value="">
+                <label for="inputUserame">Nombre de usuario</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" name= "inputEmail" class="form-control" placeholder="Dirección de email" required value="">
+                <label for="inputEmail">Dirección de email</label>
+              </div>
+
+              <hr>
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required value="">
+                <label for="inputPassword">Contraseña</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="password" id="inputConfirmPassword" name="inputConfirmPassword" class="form-control" placeholder="Password" required value="">
+                <label for="inputConfirmPassword">Confirmar contraseña</label>
+              </div>
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Registrar</button>
+              <a class="d-block text-center mt-2 small" href="login.html">Ingresar</a>
+              <hr class="my-4">
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Regístrate con Google</button>
+              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Regístrate con Facebook</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+              <div class="social">
+                <a href="http://www.facebook.com"><img src="img/icono1.png" alt"Facebook"></a>
+                <a href="http://www.twitter.com"><img src="img/icono2.png" alt"Twitter"></a>
+                <a href="http://www.youtube.com"><img src="img/icono3.png" alt"Youtube"></a>
+               </div>
+            <a href="#"><p><span>&copyflashtore</span></a> | All rights reserved  | 2019</p>
+     </footer>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
