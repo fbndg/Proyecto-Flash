@@ -1,0 +1,192 @@
+.dropdown-header a{
+  color: grey;
+  text-decoration: none;
+}
+
+.entero{
+
+	margin: 25px auto;
+	background: white;
+	padding: 0px;
+}
+
+@media (max-width: 765px) {
+	.entero {
+		margin: 0px;
+		border-radius: 0px;
+	}
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	border-radius: 15px;
+}
+
+body{
+	background-image: url(../img/fondo-1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+
+/****************************************************************************************************************************************************************************************************************************************************CSS DEL HEADER
+***************************************************************************************************************************************************************************************************************************************************/
+
+.logo img{
+	width: 350px;
+	margin: auto;
+	padding: 5px;
+	display: block;
+}
+
+.logo{
+	width: 100%;
+	background: #000;
+	margin-top: 20px;
+}
+.logo p{
+  font-size: 27px;
+  color: #fff;
+}
+
+div p{
+	text-align: center;
+	margin: 0 auto 5px;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+/****************************************************************************************************************************************************************************************************************************************************CSS DEL NAV ***************************************************************************************************************************************************************************************************************************************************/
+
+
+.navbar {
+	margin: 20px auto;
+	font-size: 20px;
+	background-color: #31aafe;
+}
+
+.nav-link, .nav-link:hover {
+	color: white;
+}
+
+.tros {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(107%) contrast(101%);
+}
+
+@media (max-width: 765px) {
+
+	body div.container {
+	padding: 0px;
+	}
+}
+
+@media (max-width: 991px) {
+	.navbar {
+	  font-size: 18px;
+	}
+
+}
+/****************************************************************************************************************************************************************************************************************************************************CSS PERFIL DEL USUARIO ***************************************************************************************************************************************************************************************************************************************************/
+
+
+.text-center{
+	margin: 0 auto;
+}
+.profile-header{
+	background-color: #31aafe;
+	padding:5px;
+	color:#fff;
+}
+.profile-header a i{
+	color:#fff;
+}
+.user-img{
+	padding:20px 0px;
+	color:#31aafe;
+}
+.user-img h5{
+	margin:5px 0px 0px 0px;
+	font-weight: bold;
+}
+.user-img span{
+	color:#5a5a5a;
+}
+.user-social-detail{
+	background-color: #FFF;
+	padding:8px 5px 5px 5px;
+	border-top: 3px solid #31aafe;
+}
+.user-social-detail i{
+	color:#31aafe;
+  font-size:18px;
+  display: block;
+}
+
+.user-social-detail a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/****************************************************************************************************************************************************************************************************************************************************CSS DEL FOOTER
+***************************************************************************************************************************************************************************************************************************************************/
+
+.footer{
+	background: #000;
+	color: #fff;
+	clear: both;
+	padding: 10px 0px;
+	margin: 20px auto;
+	text-align: center;
+	width: 100%;
+}
+
+.footer p {
+	margin: 10px auto;
+}
+
+span{
+	font-weight: bold;
+}
+
+.footer img{
+	width: 50px;
+	margin-right: 10px;
+}
+
+.div1 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+@media (max-width: 321px) {
+  .logo img {
+    width: 100%;
+  }
+  .logo p{
+    font-size: 25px;
+  }
+}
+@media (max-width: 765px) {
+	.row {
+		margin: 0px;
+		border-radius: 0px;
+	}
+}
+@media (min-width: 766px) and (max-width: 991px) {
+	.footer {
+		margin-top: 100px;
+	}
+	.entero {
+		margin-top: 100px
+	}
+}
