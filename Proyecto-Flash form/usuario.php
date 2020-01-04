@@ -1,28 +1,30 @@
 <?php
 session_start();
-function pre($algo){
-  echo "<pre>";
-  var_dump($algo);
-  echo "</pre>";
+require_once 'controladores/controladorValidacion.php';
+$erroresEnAvatar = [];
+if($_FILES) {
+    $erroresEnAvatar = validarAvatar();
+    if(count($erroresEnAvatar) == 0) {
+      $extension = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+      $archivoTemporal = $_FILES["avatar"]["tmp_name"];
+      $nuevaRuta = dirname(__file__);
+      $nuevaRuta = $nuevaRuta . "\avatars/";
+      $nombreArchivo = "avatar_" . $_SESSION["avatar"] . "." . $extension;
+      move_uploaded_file($archivoTemporal, $nuevaRuta . $nombreArchivo);
+      header("Location: usuario.php");
+    }
 }
-$errores = [];
-if(isset($_FILES)) {
-  if ($_FILES["avatar"]["size"] > $) {
-    $errores[]
-  }
-}
-
-pre($_FILES);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/estilos-usuario.css">
   <script src="https://kit.fontawesome.com/999ad7145f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/estilos-usuario.css">
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
@@ -50,16 +52,22 @@ pre($_FILES);
 
       	<div class="row user-img">
       		<div class="col-lg-12 col-sm-12 col-12 div1">
-      			<img src="img/perfil-usuario img/foto-usuario.png" class="rounded-circle img-thumbnail">
+      			<img style="width:210px;height:210px;" src="avatars<?=avatar()?>" class="rounded-circle img-thumbnail">
             <form action="usuario.php" method="post" enctype="multipart/form-data">
 
                 <div class="form-group">
-                  <label for="avatar">Cambiar avatar</label>
+                  <label for="avatar">Cambiar avatar</label> <br>
+                  <?php if (isset($erroresEnAvatar["avatar"])) {
+                    foreach ($erroresEnAvatar["avatar"] as $error) {
+                      echo '<small class="text-danger">' . $error . '</small><br>';
+                      }
+                    }
+                    ?>
                   <input type="file" name="avatar" class="form-control-file d-none" id="avatar">
+                  <button type="submit" name="button">Hola! Soy un botón</button>
                 </div>
-
             </form>
-                  <h5>Nombre Apellido</h5>
+                  <h5><?=nombreUsuario()?></h5>
                   <i class="fas fa-map-marker-alt"></i>
       			  <span>Direccion</span>
       		</div>

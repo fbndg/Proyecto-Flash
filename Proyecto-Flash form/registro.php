@@ -8,6 +8,7 @@ if($_POST) {
         $usuarioParaGuardar = [
             "nombre" => trim($_POST['nombre']),
             "email" => trim($_POST['email']),
+            "avatar" => uniqid(),
             "password" => password_hash($_POST['password'], PASSWORD_DEFAULT)
         ];
         $elJson = json_encode($usuarioParaGuardar);
@@ -46,7 +47,7 @@ if($_POST) {
               <form class="form-signin" method="POST" action="">
                 <div class="form-label-group">
                   <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Usuario" required autofocus value="<?= persistirDato("nombre", $erroresEnRegistro) ?>">
-                  <label for="nombre">Nombre de usuario</label>
+                  <label for="nombre">Nombre y Apellido</label>
                   <?php
                       if(isset($erroresEnRegistro['nombre'])) {
                           foreach($erroresEnRegistro['nombre'] as $error){

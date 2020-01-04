@@ -1,31 +1,33 @@
 <?php
-    session_start();
-    require_once 'controladores/controladorValidacion.php';
-    $erroresEnLogin = [];
-    if($_POST) {
-        $erroresEnLogin = validarFormulario();
-        if(count($erroresEnLogin) == 0) {
-            // Logueo al usuario...
-            $usuariosRegistrados = file_get_contents("usuarios.json");
-            $usuariosRegistrados = explode(PHP_EOL, $usuariosRegistrados);
-            array_pop($usuariosRegistrados);
-            foreach($usuariosRegistrados as $usuario) {
-                $arrayUsuario = json_decode($usuario, true);
-                if($_POST['email'] == $arrayUsuario['email']) {
-                    if(password_verify($_POST['password'], $arrayUsuario['password'])) {
-                        $_SESSION['email'] = $arrayUsuario['email'];
-                        if(isset($_POST['recordarme']) && $_POST['recordarme'] == "on") {
-                            //setcookie(nombreCookie, valorCookie, tiempoCookie);
-                            setcookie("usuarioEmail", $arrayUsuario['email'], time() + 60 * 60 * 24 * 7);
-                            setcookie("usuarioPassword", $arrayUsuario['password'], time() + 60 * 60 * 24 * 7);
-                        }
-                        header('Location: usuario.php');
+session_start();
+require_once 'controladores/controladorValidacion.php';
+$erroresEnLogin = [];
+if($_POST) {
+    $erroresEnLogin = validarFormulario();
+    if(count($erroresEnLogin) == 0) {
+        // Logueo al usuario...
+        $usuariosRegistrados = file_get_contents("usuarios.json");
+        $usuariosRegistrados = explode(PHP_EOL, $usuariosRegistrados);
+        array_pop($usuariosRegistrados);
+        foreach($usuariosRegistrados as $usuario) {
+            $arrayUsuario = json_decode($usuario, true);
+            if($_POST['email'] == $arrayUsuario['email']) {
+                if(password_verify($_POST['password'], $arrayUsuario['password'])) {
+                    $_SESSION['email'] = $arrayUsuario['email'];
+                    $_SESSION['avatar'] = $arrayUsuario['avatar'];
+                    $_SESSION['nombre'] = $arrayUsuario['nombre'];
+                    if(isset($_POST['recordarme']) && $_POST['recordarme'] == "on") {
+                        //setcookie(nombreCookie, valorCookie, tiempoCookie);
+                        setcookie("usuarioEmail", $arrayUsuario['email'], time() + 60 * 60 * 24 * 7);
+                        setcookie("usuarioPassword", $arrayUsuario['password'], time() + 60 * 60 * 24 * 7);
                     }
+                    header('Location: usuario.php');
                 }
             }
-            exit;
         }
+        exit;
     }
+}
 ?>
 
 <!DOCTYPE html>

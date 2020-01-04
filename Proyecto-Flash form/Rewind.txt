@@ -1,0 +1,15 @@
+// $arrayFormato = [".jpg", ".jpeg", ".png"];
+// $avatarDir = '/avatars';
+// $avatarJpg = '/avatar_' . $_SESSION['avatar'] . ".jpg";
+// $avatarJpeg =  '/avatar_' . $_SESSION['avatar'] . ".jpeg";
+// $avatarPng =  '/avatar_' . $_SESSION['avatar'] . ".png";
+//-------
+// if (file_exists($avatarDir . $avatarJpg)) {
+//   echo $avatarJpg;
+// }elseif (file_exists($avatarDir . $avatarJpeg)) {
+//   echo $avatarJpeg;
+// }elseif (file_exists($avatarDir . $avatarPng)) {
+//   echo $avatarPng;
+// }else {
+//   echo "foto-usuario.png";
+// }
