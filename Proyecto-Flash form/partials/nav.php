@@ -17,7 +17,7 @@
       <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbardrop">Productos</a>
         <div class="dropdown-menu">
-          <div class="dropdown-header"><a href="productos.html">Todas las categorias</a></div>
+          <div class="dropdown-header"><a href="productos.php">Todas las categorias</a></div>
           <div class="dropdown-divider"></div>
           <a href="desktops.php" class="dropdown-item">Pc's de escritorio</a>
           <a href="notebooks.php" class="dropdown-item">Notebooks</a>

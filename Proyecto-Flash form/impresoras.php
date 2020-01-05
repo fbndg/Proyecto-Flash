@@ -18,12 +18,12 @@ session_start();
 
       <?php require_once "partials/nav.php" ?>
 
-   <section class="main">
+   <!--<section class="main">
      <section class="articles">
        <div class="flex-container dest">
        <article class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
          <h2>Impresoras</h2>
-         <a href="imp1.html"><img src="img/imp1.png" alt="Laser Monocromática Brother HI-1200"></a>
+         <a href="imp1.php"><img src="img/imp1.png" alt="Laser Monocromática Brother HI-1200"></a>
 
 
                  <p>$ 7170
@@ -53,6 +53,24 @@ session_start();
          L2360Dw 32P/m Wifi Duplex</p>
      </article>
      </div>
+   </section>-->
+
+   <section class="main">
+     <section class="articles">
+       <!--<div class="flex-container dest">-->
+         <div class="flex-container indeximg">
+<article>
+         <!--<article class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-6 ">-->
+           <h2>Impresoras</h2>
+           <a href="imp1.php"><img src="img/imp1copia.png" alt="AMD APU A6 7480"></a>
+          <img src="img/imp2copia.png" alt="Intel Celeron G4900">
+          <img src="img/imp3copia.png" alt="AMD APU A6 7480 1Tb">
+          <img src="img/imp4copia.png" alt="Intel Celeron Dual Core G4900">
+          <img src="img/imp5copia.png" alt="AMD Athlon 200Ge">
+          <img src="img/imp6copia.png" alt="Mini Intel Celeron Dual Core">
+       </article>
+       </div>
+     </section>
    </section>
 
    <div class="cont-imagen">

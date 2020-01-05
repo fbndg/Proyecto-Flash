@@ -24,19 +24,24 @@ session_start();
 <div class="flex-container prodct">
        <article>
          <h2>TODOS LOS PRODUCTOS</h2>
-         <img src="img/dk1.png" alt="AMD APU A6 7480">
+         <a href="desk1.php"><img src="img/dk3.png" alt="AMD APU A6 7480"></a>
+         <!--<div class="descuento">
+           <strong>10 % OFF</strong>
+         </div>-->
+
+
          <img src="img/dk2.png" alt="Intel Celeron G4900">
          <img src="img/dk3.png" alt="AMD APU A6 7480 1Tb">
          <img src="img/dk4.png" alt="Intel Celeron Dual Core G4900">
          <img src="img/dk5.png" alt="AMD Athlon 200Ge">
          <img src="img/dk6.png" alt="Mini Intel Celeron Dual Core">
-         <img src="img/noteb1.png" alt="Dell Inspiron 3481 i3">
+         <a href="noteb1.php"><img src="img/noteb1.png" alt="Dell Inspiron 3481 i3"></a>
          <img src="img/noteb2.png" alt="Cx 2en1 Touch360">
          <img src="img/noteb3.png" alt="Cx Cloudbook 23">
          <img src="img/noteb4.png" alt="Bangho Zero M4">
          <img src="img/noteb5.png" alt="Asus X540M">
          <img src="img/noteb6.png" alt="HP 240 G7">
-         <img src="img/imp1.png" alt="Laser Monocromática Brother HI-1200">
+         <a href="imp1.php"><img src="img/imp1.png" alt="Laser Monocromática Brother HI-1200"></a>
          <img src="img/imp2.png" alt="Laser Brother HI-1212w">
          <img src="img/imp3.png" alt="Laser Multifunción HP M135W">
          <img src="img/imp4.png" alt="Laser HP M203dw">
@@ -46,6 +51,11 @@ session_start();
     </div>
  </section>
    </section>
+
+   <div class="cont-imagen">
+     <div id="imagen">
+       <a href="#"><img src="img/flechaSubir.jpg" alt="Flecha"></a>
+     </div>
 
   <?php require_once "partials/footer.php" ?>
 

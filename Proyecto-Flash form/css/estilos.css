@@ -103,8 +103,8 @@ div p{
 .flex-container{
   display: flex;
   justify-content: center;
-
 }
+
 .indeximg img{
   margin: 0px 20px;
 }
@@ -132,8 +132,9 @@ div p{
 }
 
 .main .articles article p{
-  text-align: center; /*29/12: cambie justify x center*/
+  text-align: left; /*29/12: cambie justify x center*/
 }
+
 .descuento{
   width: 100px;
   height: 30px;
@@ -143,9 +144,22 @@ div p{
   background-color: #4caf50;
   border-radius: 5px;
   position: relative;
-  bottom: 100px; /*40*/
-  left: 60px;/*30*/
+  bottom: 100px; /*50*/
+  left: 60px;/*50*/
 }
+
+/*.noteb {
+    width: 100px;
+    height: 30px;
+    padding-left: 5px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}*/
 
 .descripcion{
   position: relative;
@@ -159,8 +173,21 @@ div p{
 #imagen{
   position:fixed;
   bottom:150px;
-  left:1000px;
+  /*left:1000px;*/
+  right: 200px;
   border-radius: 50px;
+}
+
+.d-flex p-2 bd-highlight{
+  display: flex;
+
+}
+
+.parrafos p{
+  text-align: left;
+  float: left;
+
+
 }
 
  /*------------ MEDIA ------------*/

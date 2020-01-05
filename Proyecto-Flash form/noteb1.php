@@ -9,7 +9,7 @@ session_start();
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/estilos.css">
-    <title>desktop 1</title>
+    <title>notebook</title>
   </head>
 
   <body>
@@ -25,74 +25,85 @@ session_start();
 <div class="flex-container indeximg">
        <article>
          <h2>Dell Inspiron 3481 i3.</h2>
-         <img src="img/noteb1copia.png" alt="Dell Inspiron 3481 i3">
-         <!--<div class="descuento">
+
+<div class="d-flex flex-row bd-highlight mb-3"><!--04/01: Agregué este div para encolumnar la img-->
+  <div class="p-2 bd-highlight"><img src="img/noteb1copia.png" alt="Dell Inspiron 3481 i3">
+
+         <div class="descuento">
            <strong>10 % OFF</strong>
-         </div>-->
-         <p class="descripcion">Descripción.<br>
-           Descripción
+         </div>
+      </div>
 
-           Tamaño perfecto para priorizar la portabilidad.
-           La notebook Dell Inspiron 3481 viene en un tamaño perfecto para estudiantes o viajeros que necesitan compactar los tamaños y reducir pesos en su equipaje. Es cómoda, elegante y moderna.
-           Rendimiento Intel
-           La notebook compone su hardware de procesador Intel Core i3 de 7ª Generación con el rendmiento necesario para tus tareas del día a día. Optimizá tiempo y espacio con Dell.
+         <div class="d-flex p-2 bd-highlight"><!--04/01: Agregué estos divs para encolumnar el p-->
+           <div class="parrafos">
+             <div class="d-flex justify-content-end">
+               <p>
+                 La notebook <strong>Dell Inspiron 3481</strong> viene en un tamaño perfecto para priorizar la portabilidad<br> de estudiantes o viajeros que necesitan compactar los tamaños y reducir pesos en su equipaje.<br> Es cómoda, elegante y moderna.
+                 Rendimiento Intel.<br>
+                 La notebook compone su hardware de procesador <strong>Intel Core i3 de 7ª Generación</strong><br> con el rendmiento necesario para tus tareas del día a día. Optimizá tiempo y espacio con <strong>Dell</strong>.<br><br>
 
-           Características
+                 <strong>Características.<br><br>
 
-           ALMACENAMIENTO
-           Capacidad: 1 Terabyte
-           Interfaz: Sata 2.5"
-           Disco Sólido: Compatible (No Incluido)
-           Velocidad: 5400Rpm
+                 ALMACENAMIENTO.</strong>
+                 <strong>Capacidad:</strong> 1 Terabyte.
+                 <strong>Interfaz:</strong> Sata 2.5".
+                 <strong>Disco sólido:</strong> Compatible (No incluído).
+                 <strong>Velocidad:</strong> 5400Rpm.<br>
 
-           CONECTIVIDAD
-           Ethernet: Sí
-           Wi-Fi: Sí
-           Bluetooth: Sí
+                 <strong>CONECTIVIDAD.</strong>
+                 <strong>Ethernet:</strong> Sí.
+                 <strong>Wi-Fi:</strong> Sí.
+                 <strong>Bluetooth:</strong> Sí.<br>
 
-           MEMORIA RAM
-           Capacidad: 4 Gigas
-           Tipo: DDR4
-           Formato: SODIMM
-           Expandible: Sí
+                 <strong>MEMORIA RAM.</strong>
+                 <strong>Capacidad:</strong> 4 Gigas.
+                 <strong>Tipo:</strong> DDR4.
+                 <strong>Formato:</strong> SODIMM.
+                 <strong>Expandible:</strong> Sí.<br>
 
-           OTRAS CARACTERISTICAS
-           Sensor Dactilar: No
-           Teclado Numérico: No
-           Cámara Web: Sí
+                 <strong>OTRAS CARACTERISTICAS.</strong>
+                 Sensor Dactilar:</strong> No.
+                 Teclado Numérico:</strong> No.
+                 Cámara Web:</strong> Sí.<br>
 
-           PANTALLA
-           Tamaño: 14"
-           Resolucion: 1366x768
-           Tecnologia: HD, LED
+                 <strong>PANTALLA.</strong>
+                 <strong>Tamaño:</strong> 14".
+                 <strong>Resolución:</strong> 1366x768.
+                 <strong>Tecnología:</strong> HD, LED.<br>
 
-           PROCESADOR
-           Intel: Core i3
-           Modelo: 7020u
-           Núcleos: 2 (4 Subprocesos)
-           Frecuencia: 2.30Ghz
-           Caché: 3Mb SmartCache
+                 <strong>PROCESADOR.</strong>
+                 <strong>Intel:</strong> Core i3.
+                 <strong>Modelo:</strong> 7020u.
+                 <strong>Núcleos:</strong> 2 (4 Subprocesos).<br>
+                 <strong>Frecuencia:</strong> 2.30Ghz.
+                 <strong>Cache:</strong> 3Mb SmartCache.<br>
 
-           PUERTOS
-           Usb 2.0: Sí
-           Hdmi: Sí
-           Audio/Mic 3.5: Sí
+                 <strong>PUERTOS.</strong>
+                 <strong>Usb 2.0:</strong> Sí.
+                 <strong>Hdmi:</strong> Sí.
+                 <strong>Audio/Mic 3.5:</strong> Sí.<br>
 
-           SIN SISTEMA OPERATIVO
-           Windows 10: Compatible (No incluido)
-           Versión: 64-bits
+                 <strong>SIN SISTEMA OPERATIVO.</strong>
+                 Windows 10: Compatible (No incluído).
+                 <strong>Versión:</strong> 64-bits.<br>
 
-           USO RECOMENDADO
-           Hogar, Oficina: Intermedio
-</p>
-
-</div>
+                 <strong>USO RECOMENDADO.</strong>
+                 Hogar, oficina: Intermedio.
+           </p>
+         </div>
+           </div>
+         </div>
+          </div>
 
 </article>
    </section>
 </section>
 
-
+<div class="cont-imagen">
+  <div id="imagen">
+    <a href="#"><img src="img/flechaSubir.jpg" alt="Flecha"></a>
+  </div>
+</div>
 
   <?php require_once "partials/footer.php" ?>
 

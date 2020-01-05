@@ -186,6 +186,12 @@ session_start();
           </div>
       </div>
 
+      <div class="cont-imagen">
+        <div id="imagen">
+          <a href="#"><img src="img/flechaSubir.jpg" alt="Flecha"></a>
+        </div>
+      </div>
+
       <?php require_once "partials/footer.php" ?>
 
   </div>
