@@ -20,34 +20,33 @@ session_start();
 
       <?php require_once "partials/nav.php" ?>
 
+      <section class="main">
+        <section class="articles">
+          <!--<div class="flex-container dest">-->
+          <div class="flex-container indeximg">
+            <article>
+              <!--<article class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-6 ">-->
+              <h2>Pc's de escritorio</h2>
+              <a href="desk1.php"><img src="img/dk3copia.png" alt="AMD APU A6 7480"></a>
+              <img src="img/dk2copia.png" alt="Intel Celeron G4900">
+              <img src="img/dk3copia.png" alt="AMD APU A6 7480 1Tb">
+              <img src="img/dk4copia.png" alt="Intel Celeron Dual Core G4900">
+              <img src="img/dk5copia.png" alt="AMD Athlon 200Ge">
+              <img src="img/dk6copia.png" alt="Mini Intel Celeron Dual Core">
+            </article>
+          </div>
+       <!--</div>-->
 
-   <section class="main">
-     <section class="articles">
-       <!--<div class="flex-container dest">-->
-         <div class="flex-container indeximg">
-<article>
-         <!--<article class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-6 ">-->
-           <h2>Pc's de escritorio</h2>
-           <a href="desk1.php"><img src="img/dk3copia.png" alt="AMD APU A6 7480"></a>
-          <img src="img/dk2copia.png" alt="Intel Celeron G4900">
-          <img src="img/dk3copia.png" alt="AMD APU A6 7480 1Tb">
-          <img src="img/dk4copia.png" alt="Intel Celeron Dual Core G4900">
-          <img src="img/dk5copia.png" alt="AMD Athlon 200Ge">
-          <img src="img/dk6copia.png" alt="Mini Intel Celeron Dual Core">
-       </article>
-       </div>
-     <!--</div>-->
-
-     </section>
-   </section>
+        </section>
+      </section>
 
    <div class="cont-imagen">
      <div id="imagen">
        <a href="#"><img src="img/flechaSubir.jpg" alt="Flecha"></a>
      </div>
    </div>
-</div>
    <?php require_once "partials/footer.php" ?>
+ </div>
 
 
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

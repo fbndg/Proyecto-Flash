@@ -2,16 +2,16 @@
 // 10 = desktop
 // 20 = Notebook
 // 30 = impresoras
-//
-//
+// 308x294 copia.png DESKTOP, DESK1, NOTEBOOK, NOTEB1, IMPRESORA Y IMP1 .PHP
+// 440X427 .png PRODUCTOS
 $desk = [
-  10 => [
+  11 => [
     "id" => 11,
     "titulo" => "PC AMD APU A7480 SSD 120GB RAM 4GB",
     "precio" => 14839,
     "precioO" => 13490,
     "enOferta" => true,
-    "imagenIP" => "dk1.png",
+    "imagenP" => "dk1.png",
     "imagenO" => "dk1bcopia.png",
     "descripcion" => "Descripción:<br>
                       La Pc ideal para una estación de trabajo rápida, eficiente y duradera.<br>La mejor opción para tu oficina o estudio.<br>
@@ -29,14 +29,14 @@ $desk = [
                       SISTEMA OPERATIVO. Sin Windows: Compatible USO RECOMENDADO. Hogar, Oficina: Básico"
   ],
 
-  11 => [
+  12 => [
     "id" => 12,
     "titulo" => "PC Intel Celeron G4900 SSD 120GB RAM 4GB",
     "precio" => 13995,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk2.png",
-    "imagenO" => "dk2bcopia.png",
+    "imagenP" => "dk2.png",
+    "imagenO" => "dk2copia.png",
     "descripcion" => "Descripción.<br>
                       La Pc ideal para una estación de trabajo rápida, eficiente y duradera.<br>La mejor opción para tu oficina o estudio.<br>
                       Instalá los programas necesarios y aumentá tu productividad.<br>Hacé todo más rápido con la tecnología SSD.<br>
@@ -53,14 +53,14 @@ $desk = [
                       PUERTOS. Usb 2.0: Sí Audio/Mic 3.5: Sí
                       SISTEMA OPERATIVO. Sin Windows: Compatible USO RECOMENDADO. Hogar, Oficina: Básico"
   ],
-  12 => [
+  13 => [
     "id" => 13,
     "titulo" => "Pc Amd Apu A6 7480 1Tb/4Gb",
     "precio" => 14990,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "dk3.png",
+    "imagenO" => "dk3copia.png",
     "descripcion" => "Descripción.<br>
                       Ideal para la oficina o el hogar! Navegá por internet, mirá películas o utilizá los programas necesarios para el estudio.<br>
                       *Modelo sujeto a stock*<br>
@@ -76,34 +76,34 @@ $desk = [
                       PUERTOS. Usb 2.0: Sí Audio/Mic 3.5: Sí
                       SISTEMA OPERATIVO. Sin Windows: Compatible USO RECOMENDADO. Hogar, Oficina: Básico"
   ],
-  13 => [
+  14 => [
     "id" => 14,
     "titulo" => "Pc Intel Celeron Dual Core G4900",
     "precio" => 15495,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "dk4.png",
+    "imagenO" => "dk4copia.png",
     "descripcion" => ""
   ],
-  14 => [
+  15 => [
     "id" => 15,
     "titulo" => "Pc Amd Athlon 200Ge SSD 240GB",
     "precio" => 15990,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "dk5.png",
+    "imagenO" => "dk5copia.png",
     "descripcion" => ""
   ],
-  15 => [
+  16 => [
     "id" => 16,
     "titulo" => "Pc Mini Intel Celeron Dual Core",
     "precio" => 16495,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "dk6.png",
+    "imagenO" => "dk6copia.png",
     "descripcion" => ""
   ]
 ];
@@ -114,8 +114,8 @@ $note= [
     "precio" => 30990,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "noteb1.png",
+    "imagenO" => "noteb1copia.png",
     "descripcion" => 'Descripción.<br>
                       Tamaño perfecto para priorizar la portabilidad.<br>
                       La notebook Dell Inspiron 3481 viene en un tamaño perfecto para estudiantes o viajeros que necesitan compactar los tamaños y reducir pesos en su equipaje. Es cómoda, elegante y moderna.<br>
@@ -138,8 +138,8 @@ $note= [
     "precio" => 14990,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "noteb2.png",
+    "imagenO" => "noteb2copia.png",
     "descripcion" => 'Descripción.<br>
                       Características:<br>
                       Tipo: Notebook 2 en 1 Modelo: Touch 360<br>
@@ -158,8 +158,8 @@ $note= [
     "precio" => 14990,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "noteb3.png",
+    "imagenO" => "noteb3copia.png",
     "descripcion" => 'Descripción.<br>
                       Tamaño perfecto para priorizar la portabilidad.<br>
                       ¿No parás de moverte? La NUEVA Cloudbook 2019 de 14" te brinda una solución completa. De diseño innovador y materiales livianos, está pensada para que la lleves a todas partes, sin descuidar desempeño y funcionalidad.<br>
@@ -185,8 +185,8 @@ $note= [
     "precio" => 19799,
     "precioO" => 17999,
     "enOferta" => true,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "noteb4.png",
+    "imagenO" => "noteb4copia.png",
     "descripcion" => ''
   ],
   25 => [
@@ -195,8 +195,8 @@ $note= [
     "precio" => 19490,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "noteb5.png",
+    "imagenO" => "noteb5copia.png",
     "descripcion" => ''
   ],
   26 => [
@@ -205,11 +205,11 @@ $note= [
     "precio" => 22549,
     "precioO" => 20499,
     "enOferta" => true,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "noteb6.png",
+    "imagenO" => "noteb6copia.png",
     "descripcion" => ''
   ],
-]
+];
 $impr= [
   31 => [
     "id" => 31,
@@ -217,8 +217,8 @@ $impr= [
     "precio" => 7170,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "imp1.png",
+    "imagenO" => "imp1copia.png",
     "descripcion" => 'Especificación:<br>
                       Tipo de impresora: Láser<br>
                       Capacidad de la memoria Estándar: 1 MB 32 MB<br>
@@ -234,8 +234,8 @@ $impr= [
     "precio" => 8749,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "imp2.png",
+    "imagenO" => "imp2copia.png",
     "descripcion" => 'Descripción<br>
                       Características:<br>
                       Impresora láser monocromática wifi<br>
@@ -256,8 +256,8 @@ $impr= [
     "precio" => 12999,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "imp3.png",
+    "imagenO" => "imp3copia.png",
     "descripcion" => 'Descripción.<br>
                       Obtenga un rendimiento productivo de la impresora multifunción a un precio asequible.<br>
                       Imprima, escanee y copie, produzca resultados de alta calidad e imprima y escanee desde su teléfono.<br>
@@ -282,8 +282,8 @@ $impr= [
     "precio" => 12189,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "imp4.png",
+    "imagenO" => "imp4copia.png",
     "descripcion" => ''
   ],
   35 => [
@@ -292,8 +292,8 @@ $impr= [
     "precio" => 14499,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "imp5.png",
+    "imagenO" => "imp5copia.png",
     "descripcion" => ''
   ],
   36 => [
@@ -302,9 +302,17 @@ $impr= [
     "precio" => 15449,
     "precioO" => 0,
     "enOferta" => false,
-    "imagenIP" => "dk1.png",
-    "imagenO" => "dk1bcopia.png",
+    "imagenP" => "imp6.png",
+    "imagenO" => "imp6copia.png",
     "descripcion" => ''
   ],
-]
+];
+$elJsonDesk = json_encode($desk);
+file_put_contents("bdddesk.json", $elJsonDesk);
+
+$elJsonNote = json_encode($note);
+file_put_contents("bddnote.json", $elJsonNote);
+
+$elJsonImpr = json_encode($impr);
+file_put_contents("bddimpr.json", $elJsonImpr);
 ?>

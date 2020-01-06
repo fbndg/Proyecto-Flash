@@ -11,6 +11,7 @@ if($_FILES) {
       $nuevaRuta = $nuevaRuta . "\avatars/";
       $nombreArchivo = "avatar_" . $_SESSION["avatar"] . "." . $extension;
       move_uploaded_file($archivoTemporal, $nuevaRuta . $nombreArchivo);
+      eliminarExFoto();
       header("Location: usuario.php");
     }
 }

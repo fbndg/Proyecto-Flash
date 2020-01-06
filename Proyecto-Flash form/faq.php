@@ -20,11 +20,11 @@ session_start();
 
 
       <div id="acordion">
-          <h1 class="faqHeader h1">Preguntas frecuentes</h1>
-          <div class="faqHeader">Envíos</div>
+          <h1 class="faqHeader h1 pb-2">Preguntas frecuentes</h1>
+          <div class="faqHeader p-0">Envíos</div>
           <div class="card">
 
-            <div class="card-header">
+            <div class="card-header border">
                 <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapseOne">¿Hacen envíos al interior?</a>
             </div>
             <div id="collapseOne" class="collapse">
@@ -37,7 +37,7 @@ session_start();
 
           <div class="card">
 
-              <div class="card-header">
+              <div class="card-header border">
 
                       <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapseTen">¿Que costo tiene un envío?</a>
 
@@ -50,7 +50,7 @@ session_start();
 
           </div>
           <div class="card">
-              <div class="card-header">
+              <div class="card-header border">
 
                       <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapseEleven">¿Cuánto demora?</a>
 
@@ -64,7 +64,7 @@ session_start();
 
           <div class="faqHeader">Formas de pago</div>
           <div class="card">
-              <div class="card-header">
+              <div class="card-header border">
 
                       <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapsetree">¿Los precios publicados en la web en que moneda están?</a>
 
@@ -76,7 +76,7 @@ session_start();
               </div>
           </div>
           <div class="card">
-              <div class="card-header">
+              <div class="card-header border">
 
                       <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapseforest">¿Son precios Finales o más IVA?</a>
 
@@ -88,7 +88,7 @@ session_start();
               </div>
           </div>
           <div class="card">
-              <div class="card-header">
+              <div class="card-header border">
 
                       <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapsehierv">¿Entregan factura y garantía?</a>
 
@@ -100,7 +100,7 @@ session_start();
               </div>
           </div>
           <div class="card">
-              <div class="card-header">
+              <div class="card-header border">
 
                       <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapseTwo">¿Cuáles son las formas de pago?</a>
 
@@ -118,7 +118,7 @@ session_start();
           </div>
 
           <div class="card">
-              <div class="card-header">
+              <div class="card-header border">
 
                       <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapseThree">¿Puedo pagar con tarjeta?</a>
 
@@ -131,7 +131,7 @@ session_start();
           </div>
 
           <div class="card">
-              <div class="card-header">
+              <div class="card-header border">
 
                       <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapseFive">¿Puedo pagar en cuotas sin interés?</a>
 
@@ -145,7 +145,7 @@ session_start();
           </div>
 
           <div class="card">
-              <div class="card-header">
+              <div class="card-header border">
 
                       <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapseSix">¿Cuánto es el interés que cobra MercadoPago por pagar con tarjetas que no estén en promoción?</a>
 
@@ -160,7 +160,7 @@ session_start();
 
           <div class="faqHeader">Facturación</div>
           <div class="card">
-              <div class="card-header">
+              <div class="card-header border">
 
                       <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapseEight">¿Hacen factura A? ¿Cómo la solicito?</a>
 
@@ -173,7 +173,7 @@ session_start();
           </div>
 
           <div class="card">
-              <div class="card-header">
+              <div class="card-header border">
 
                     <a class="card-link collapsed" data-toggle="collapse" data-parent="#acordion" href="#collapseNine">¿Tengo un producto en garantía que me falló, qué hago?</a>
 

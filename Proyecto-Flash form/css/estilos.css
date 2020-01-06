@@ -94,6 +94,10 @@ div p{
   /*font-weight: bold;*/
 }
 /*------------ CONTENT ------------*/
+
+.container {
+  padding: 0;
+}
 .main {
   margin: 0;
   width: 90%;
@@ -172,9 +176,9 @@ div p{
 
 #imagen{
   position:fixed;
-  bottom:150px;
+  bottom:5vh;
   /*left:1000px;*/
-  right: 200px;
+  right: 44px;
   border-radius: 50px;
 }
 
@@ -222,6 +226,7 @@ div p{
     margin: 0 auto;
   }
   article h2{
+    margin-left: 0px !important;
     text-align: center;
   }
 }

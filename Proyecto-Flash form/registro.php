@@ -39,7 +39,7 @@ if($_POST) {
       <?php require_once "partials/nav.php" ?>
 
       <div class="row cont2">
-        <div class="col-lg-10 col-xl-9 mx-auto entero2">
+        <div class="col-12 mx-auto entero2">
           <div class="card card-signin flex-row my-5">
 
             <div class="card-body">

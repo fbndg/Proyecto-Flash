@@ -117,11 +117,12 @@ span{
   margin: 0 auto;
 }
 .faqHeader {
- color: black;
- font-size: 27px;
- margin: 20px;
- padding-top: 20px;
- /*border: 1px solid #31aafe;*/
+  color: #1d2124d1;
+  font-size: 27px;
+  margin: 20px;
+  padding-top: 20px;
+  border-radius: 0px;
+  border-bottom: 1px solid #d3d6d8;
 }
 
 .card {
@@ -146,8 +147,10 @@ a.collapsed:focus, a.collapsed:hover{
 }
 
 .card-link {
-  background-color: rgb(245,245,245);
   border-bottom-width: 0px;
+}
+.card-header {
+  background-color: rgba(77, 165, 255, 0.82);
 }
 .card-header [data-toggle="collapse"]:after {
  font-family: 'Glyphicons Halflings';
@@ -173,7 +176,11 @@ a.collapsed:focus, a.collapsed:hover{
  transform: rotate(90deg);
  color: #454444;
  }
+.card-body {
+  background-color: rgb(205, 223, 255);;
+  border-radius: 0;
+}
 
-  .entero2 {
-   padding: 0;
-  }
+.entero2 {
+ padding: 0;
+}

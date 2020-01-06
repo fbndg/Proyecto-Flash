@@ -83,6 +83,19 @@ function nombreUsuario(){
   }
   return $nombreU;
 }
+function eliminarExFoto(){
+  global $extension;
+  if ($extension == "jpg") {
+    unlink("avatars/avatar_" . $_SESSION["avatar"] . ".png");
+    unlink("avatars/avatar_" . $_SESSION["avatar"] . ".jpeg");
+  } elseif ($extension == "jpeg") {
+    unlink("avatars/avatar_" . $_SESSION["avatar"] . ".png");
+    unlink("avatars/avatar_" . $_SESSION["avatar"] . ".jpg");
+  } elseif ($extension == "png") {
+    unlink("avatars/avatar_" . $_SESSION["avatar"] . ".jpg");
+    unlink("avatars/avatar_" . $_SESSION["avatar"] . ".jpeg");
+  }
+}
   function pre($algo){
     echo "<pre style='color:white;background-color:black;'>";
     var_dump($algo);
