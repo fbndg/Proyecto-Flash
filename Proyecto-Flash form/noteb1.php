@@ -27,7 +27,8 @@ session_start();
          <h2>Dell Inspiron 3481 i3.</h2>
 
 <div class="d-flex flex-row bd-highlight mb-3"><!--04/01: Agregué este div para encolumnar la img-->
-  <div class="p-2 bd-highlight"><img src="img/noteb1copia.png" alt="Dell Inspiron 3481 i3">
+  <div class="p-2 bd-highlight">
+    <a href="canasta.php" class="nav-link"><img src="img/noteb1copia.png" alt="Dell Inspiron 3481 i3"></a>
 
          <div class="descuento">
            <strong>10 % OFF</strong>

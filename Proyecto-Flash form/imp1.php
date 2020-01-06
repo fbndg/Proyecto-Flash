@@ -24,11 +24,11 @@ session_start();
 <div class="flex-container indeximg">
 
        <article>
-
          <h2>Impresora Laser Monocromática Brother HI-1200 21ppm.</h2>
          <div class="d-flex flex-row bd-highlight mb-3"><!--04/01: Agregué estos divs para encolumnar el p-->
+<div class="p-2 bd-highlight"><a href="canasta.php" class="nav-link">
+  <img src="img/imp1copia.png" alt="Impresora Laser Monocromática Brother HI-1200 21ppm"></a>
 
-           <div class="p-2 bd-highlight"><img src="img/imp1copia.png" alt="Impresora Laser Monocromática Brother HI-1200 21ppm">
                   <div class="descuento">
                     <strong>10 % OFF</strong>
                   </div>

@@ -4,5 +4,5 @@
             <a href="https://twitter.com" target="_blank"><img src="img/icono2.png" alt"Twitter"></a>
             <a href="https://www.youtube.com" target="_blank"><img src="img/icono3.png" alt"Youtube"></a>
            </div>
-        <p><span>&copyflashtore</span></a> | All rights reserved  | 2019</p>
+        <p><span>&copyflashtore</span></a> | All rights reserved  | 2020</p>
  </footer>

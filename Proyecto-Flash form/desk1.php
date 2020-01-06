@@ -25,7 +25,8 @@ session_start();
        <article>
          <h2>Pc AMD APU A.</h2>
          <div class="d-flex flex-row bd-highlight mb-3"><!--04/01: Agregué este div para encolumnar la img-->
-           <div class="p-2 bd-highlight"><img src="img/dk3copia.png" alt="AMD APU A6 7480">
+           <div class="p-2 bd-highlight">
+             <a href="canasta.php" class="nav-link"><img src="img/dk3copia.png" alt="AMD APU A6 7480"></a>             
          <div class="descuento">
            <strong>10 % OFF</strong>
          </div>

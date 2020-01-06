@@ -35,6 +35,7 @@
       </li>
       <li class="nav-item"><a href="faq.php" class="nav-link">Preguntas frecuentes</a></li>
       <li class="nav-item"><a href="contacto.php" class="nav-link">Contacto</a></li>
+
     </ul>
   </div>
   <div class="collapse navbar-collapse justify-content-end" id="buno">
@@ -42,6 +43,8 @@
       <?php if (!isset($_SESSION["email"])): ?>
         <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
         <li class="nav-item"><a href="registro.php" class="nav-link">Registro</a></li>
+        <!--0501: Agregué el link de abajo para la img del carrito-->
+        <li class="nav-item"><a href="index.php" class="nav-link"><img src="img/carrito.png" alt="carrito"></a></li>
       <?php endif; ?>
       <?php if (isset($_SESSION["email"])): ?>
         <li class="nav-item"><a href="usuario.php" class="nav-link">Usuario</a></li>
