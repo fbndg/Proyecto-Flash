@@ -77,9 +77,9 @@ if($_FILES) {
       	<div class="row user-social-detail">
 
       		<div class="col-lg-4 col-sm-4 col-4">
-  				  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+  				  <a href="canasta.php"><i class="fas fa-shopping-cart"></i></a>
   				  <div class="d-sm-none d-md-block">
-    					<p>Compras</p>
+    					<p><a href="canasta.php">Compras</a></p>
   				  </div>
     			</div>
 

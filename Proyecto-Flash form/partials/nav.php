@@ -42,6 +42,7 @@
       <?php if (isset($_SESSION["email"])): ?>
         <li class="nav-item"><a href="usuario.php" class="nav-link">Usuario</a></li>
         <li class="nav-item"><a href="logout.php" class="nav-link">Log out</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link"><img src="img/carrito.png" alt="carrito"></a></li>
       <?php endif; ?>
     </ul>
   </div>

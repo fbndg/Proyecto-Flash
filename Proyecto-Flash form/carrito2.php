@@ -23,42 +23,55 @@ session_start();
         <section class="articles">
           <div class="flex-container indeximg">
             <article class="col-12">
-              <table border="1" width="550" cellspacing="10" cellpadding="0">
-                <tr>
-                  <td>
-                    <a href="index.php"><img src="img/carritoCopia.png" width="80" height="82"></a>
-                  </td>
-                </tr>
 
-                <tr>
-                  <th>Código</th>
-                  <th>Descripción</th>
-                  <th>Precio</th>
-                  <th>Cantidad</th>
-                  <th>Subtotal</th>
-                </tr>
-                <tr>
-                  <td id="resaltado">Total a Pagar</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-
-                  <td id="totales">
-                    <!--<?php echo '$'.number_format($tSubtotal,2);?></td>-->
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>PC AMD APU A7480 SSD 120GB RAM 4GB</td>
+                    <td>$13490</td>
+                    <td>1</td>
+                    <td>$13490</td>
                   </tr>
                   <tr>
-                    <td colspan="4"><?php echo '<a href="carrito2.php">
-                    Seguir comprando... </a>';?>
-                  </td>
-                  <td colspan="4"><?php echo '<a href="index.php">
-                  Finalizar la compra</a>';?>
-                </td>
-              </tr>
-            </table>
+                    <th scope="row">24</th>
+                    <td>Notebook Bangho Zero M4 Intel J3160 $G SSD-240G 14"</td>
+                    <td>$17999</td>
+                    <td>1</td>
+                    <td>$17999</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">32</th>
+                    <td>Impresora Laser Brother HI-1212w 21ppm 2400 X 600 Dpi Wifi</td>
+                    <td>$8749</td>
+                    <td>2</td>
+                    <td>$17498</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total a pagar</th>
+                    <td colspan="2"></td>
+                    <td>incluye iva</td>
+                    <td>$48987</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+
             </article>
           </div>
         </section>
       </section>
+
       <div class="cont-imagen">
         <div id="imagen">
           <a href="#"><img src="img/flechaSubir.jpg" alt="Flecha"></a>
@@ -67,7 +80,6 @@ session_start();
 
       <?php require_once "partials/footer.php" ?>
     </div>
-
  <script src="https://kit.fontawesome.com/60afb82e62.js" crossorigin="anonymous"></script>
  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
