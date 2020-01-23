@@ -1,12 +1,14 @@
 <?php
-session_start();
+  session_start();
+  require_once("./classes/Controller/Connection.php");
+  Connection::abrirConexion();
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/estilos-impresoras.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -55,36 +57,39 @@ session_start();
      </div>
    </section>-->
 
-   <section class="main">
-     <section class="articles">
+    <section class="main">
+      <section class="articles">
        <!--<div class="flex-container dest">-->
          <div class="flex-container indeximg">
-<article>
-         <!--<article class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-6 ">-->
-           <h2>Impresoras</h2>
-           <a href="imp1.php"><img src="img/imp1copia.png" alt="AMD APU A6 7480"></a>
-          <img src="img/imp2copia.png" alt="Intel Celeron G4900">
-          <img src="img/imp3copia.png" alt="AMD APU A6 7480 1Tb">
-          <img src="img/imp4copia.png" alt="Intel Celeron Dual Core G4900">
-          <img src="img/imp5copia.png" alt="AMD Athlon 200Ge">
-          <img src="img/imp6copia.png" alt="Mini Intel Celeron Dual Core">
-       </article>
-       </div>
+           <article>
+             <!--<article class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-6 ">-->
+             <h2>Impresoras</h2>
+             <?php
+               $db=new PDO(Connection::$dsn,Connection::$db_user,Connection::$db_pass,Connection::$opt);
+               $query = $db->prepare("SELECT * FROM productos WHERE idCategoria > 2");
+               $query->execute();
+               $productos = $query->fetch(PDO::FETCH_ASSOC);
+               while ($productos !=null) { ?>
+                 <a href='producto.php?id=<?php echo $productos["idProducto"]; ?>'><img src='img/<?php echo $productos["imagenO"]; ?>'></a>
+
+             <?php $productos = $query->fetch(PDO::FETCH_ASSOC);} ?>
+           </article>
+         </div>
+       </section>
      </section>
-   </section>
 
-   <div class="cont-imagen">
-     <div id="imagen">
-       <a href="#"><img src="img/flechaSubir.jpg" alt="Flecha"></a>
+     <div class="cont-imagen">
+       <div id="imagen">
+         <a href="#"><img src="img/flechaSubir.jpg" alt="Flecha"></a>
+       </div>
      </div>
+
+     <?php require_once "partials/footer.php" ?>
+
    </div>
-
-   <?php require_once "partials/footer.php" ?>
-
- </div>
    <script src="https://kit.fontawesome.com/60afb82e62.js" crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 </body>
 </html>

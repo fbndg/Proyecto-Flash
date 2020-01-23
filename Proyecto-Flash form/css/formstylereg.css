@@ -14,7 +14,11 @@ body {
 	font-family: sans-serif;
 }
 
+.input-group{
 
+  margin-left: -2px;
+
+}
 
 .card-signin {
   border: 0;

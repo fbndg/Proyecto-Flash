@@ -56,14 +56,14 @@ if($_POST) {
                   <input type="text" id="email" name="email" class="form-control" placeholder="Username" required autofocus value="<?= persistirDato("email", $erroresEnLogin) ?>">
                   <label for="email">Email</label>
                   <?php
-              if(isset($erroresEnLogin['email'])) {
-                  foreach($erroresEnLogin['email'] as $error){
+                  if(isset($erroresEnLogin['email'])) {
+                    foreach($erroresEnLogin['email'] as $error){
                       echo '<small class="text-danger">' . $error . '</small><br>';
+                    }
+                  } else {
+                    echo "";
                   }
-              } else {
-                  echo "";
-              }
-              ?>
+                  ?>
                 </div>
 
                 <hr>
