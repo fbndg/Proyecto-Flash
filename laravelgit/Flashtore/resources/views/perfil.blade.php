@@ -25,17 +25,18 @@
 
     	<div class="row user-img">
     		<div class="col-lg-12 col-sm-12 col-12 div1">
-    			<img style="width:210px;height:210px;" src="avatars" class="rounded-circle img-thumbnail">
-          <form action="usuario.php" method="post" enctype="multipart/form-data">
+    			<img style="width:210px;height:210px;" src="/storage/{{ Auth::user()->avatar }}" class="rounded-circle img-thumbnail">
+          <form action="/Perfil" method="post" enctype="multipart/form-data">
             {{csrf_field()}}
               <div class="form-group">
                 <label for="avatar">Cambiar avatar</label> <br>
-                <?php if (isset($erroresEnAvatar["avatar"])) {
-                  foreach ($erroresEnAvatar["avatar"] as $error) {
-                    echo '<small class="text-danger">' . $error . '</small><br>';
-                    }
-                  }
-                  ?>
+                @foreach ($errors->all() as $error)
+                  <p class="alert alert-danger alert-dismissable">
+                  	<button type="button" class="close" data-dismiss="alert">&times;</button>
+                  	{{$error}}
+                  </p>
+                @endforeach
+                <input class="d-none" type="text" name="id" value="{{ Auth::user()->id }}">
                 <input type="file" name="avatar" class="form-control-file d-none" id="avatar">
                 <button type="submit" name="button">Hola! Soy un botón</button>
               </div>

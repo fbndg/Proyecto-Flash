@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\User;
+
 class UsuarioController extends Controller
 {
     /**
@@ -24,7 +26,6 @@ class UsuarioController extends Controller
      */
     public function perfil()
     {
-
         return view('perfil');
     }
 
@@ -36,13 +37,21 @@ class UsuarioController extends Controller
         ];
 
         $mensajes = [
-          "file" => "Estó no es un archivo",
+          "file" => "No ha subido un archivo",
           "image" => "Solo se permiten imagenes"
         ];
 
         $this->validate($req, $reglas, $mensajes);
 
 
+
+        $user = User::find($req["id"]);
+        $ruta = $req->file("avatar")->store("public");
+        $nombreAvatar = basename($ruta);
+        $user->avatar = $nombreAvatar;
+        $user->save();
+
+        return redirect("/Perfil");
     }
 
     /**
