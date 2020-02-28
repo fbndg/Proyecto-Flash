@@ -1,0 +1,80 @@
+﻿/*--------- CONTENT ---------*/
+#acordion {
+  width: 0 auto;
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.h1 {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.faqHeader {
+  color: #1d2124d1;
+  font-size: 27px;
+  margin: 20px;
+  padding-top: 20px;
+  border-radius: 0px;
+  border-bottom: 1px solid #d3d6d8;
+}
+
+.card {
+  margin: 0px 15px;
+}
+@media (max-width: 414px) {
+  #acordion{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .card{
+    margin: 0px;
+  }
+}
+a.collapsed, a.card-link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+a.collapsed:focus, a.collapsed:hover{
+  text-decoration: none;
+}
+
+.card-link {
+  border-bottom-width: 0px;
+}
+.card-header {
+  background-color: rgba(77, 165, 255, 0.82);
+}
+.card-header [data-toggle="collapse"]:after {
+ font-family: 'Glyphicons Halflings';
+ content: "◄";
+ float: right;
+ color: #F58723;
+ font-size: 22px;
+ line-height: 22px;
+ /* rotate "play" icon from > (right arrow) to down arrow */
+ -webkit-transform: rotate(-90deg);
+ -moz-transform: rotate(-90deg);
+ -ms-transform: rotate(-90deg);
+ -o-transform: rotate(-90deg);
+ transform: rotate(-90deg);
+}
+
+.card-header [data-toggle="collapse"].collapsed:after {
+ /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+ -webkit-transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+ transform: rotate(90deg);
+ color: #454444;
+ }
+.card-body {
+  background-color: rgb(205, 223, 255);;
+  border-radius: 0;
+}
+
+.entero2 {
+ padding: 0;
+}

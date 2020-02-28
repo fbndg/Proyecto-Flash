@@ -11,7 +11,12 @@
                <h2>TODOS LOS PRODUCTOS</h2>
 
                @foreach ($productos as $producto)
-                 <a href='producto.php?id={{$producto["idProducto"]}}'><img src='/storage/{{$producto["imagenP"]}}'></a>
+                  @if (!$producto->borrar == 1)
+
+                   <a href='http://localhost:8000/Producto/{{$producto["idProducto"]}}'><img style="width:440px;height:425px" src='/storage/{{$producto->imagen->imagen}}'></a>
+
+
+                 @endif
                @endforeach
 
 

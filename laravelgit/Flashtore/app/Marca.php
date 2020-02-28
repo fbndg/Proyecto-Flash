@@ -8,6 +8,6 @@ class Marca extends Model
 {
   protected $table = 'marcas';
   protected $primaryKey = 'idMarca';
-  protected $timestamps = false;
+  public $timestamps = false;
   protected $guarded = [];
 }

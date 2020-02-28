@@ -32,6 +32,7 @@ body{
   background-image: url(/storage/fondo-1.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   font-family: sans-serif;
 }
 
@@ -193,7 +194,14 @@ div p{
 
 
 }
-
+.fa-buy-n-large{
+  font-size: x-large;
+  padding-top: 2px;
+}
+.fa-bars{
+  font-size: large;
+  padding-top: 5px;
+}
  /*------------ MEDIA ------------*/
 @media (max-width: 1024px) {
 	.navbar {
